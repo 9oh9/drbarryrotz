@@ -1,0 +1,18 @@
+dist: trusty
+language: node_js
+node_js:
+- '6'
+install:
+- npm install
+script:
+- npm run build
+deploy:
+  provider: s3
+  access_key_id: AKIAIIQDFBGZU44C32PA
+  secret_access_key:
+    secure: hIRnnmLSTwrLKjOt4wB0JB8kOOS9Nso20BJY5dH5uiuYvlSTadsys9dMRRguFL+A9b73fxKoLnJmu5VWZqF39OqeOcYcAdOceV1ESxqV8kdxFxbDl7NjSL3+hurlHz3gFlP1Osv404sjxezsqz3zKUnPp+Dss8zS98wUcEf0w2TMJMl6qV9noM8cqkZC/ftok6p/D7YPkpALOutSpuVvSGFDkQ0To1bXkj0uzT7YhLBXPYrc736PPtukp9zbDoNePtFIBiVAOuj1H3hYB+b4lOMPTUDFAc7Q7tTMwoL/2EIacprCVnKSpdSZr1Ecyc8ulINwCg64IiqaEKQ50JhNDmM0Jt2yw53I/h3bBn3ctRjALxhmR3ZpArRPI7cYAsVOuYwnfnZM0qJ6sMOz+QQA/sq4bTWJjsWndD+60t1YkVD3kLeKuKn1HE8yhEJd39sdVIA61FOxMFdoh9ehe0Ei2oxMGlZUBOPngb0YeMMCO6atwtMFDvENSqF4tNQ93NaIzWvBfHiWQ7LM/lEkukv3yPRHbmrwMRcjXAuk0/9Oua6yFITbTfTZxzu8o/50wpAxoDGVuPYXhWs2iQ0q3b0lYS9L4uH+8I0zjnMWfI0jWNKjNpC58mxcB5Ej5jsYH9mlNaMuOOBwUDBY0XnWuNOBoQtjh0uanBgFSiqyEye7xFI=
+  bucket: drrotz
+  local-dir: build
+  acl: public_read
+  on:
+    repo: 9oh9/drbarryrotz
