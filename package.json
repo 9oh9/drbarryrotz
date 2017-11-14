@@ -4,8 +4,9 @@
   "description": "site for dr barry rotz & associates",
   "main": "index.js",
   "scripts": {
-    "build-styles": "./node_modules/.bin/node-sass-chokidar src/sass/style.scss -o build/css/ --recursive",
-    "build": "npm run build-styles && npm run copy-assets && npm run build-templates",
+    "build-styles": "./node_modules/.bin/node-sass-chokidar src/sass/bootstrap/style.scss -o build/css/ --recursive",
+    "build-bs": "./node_modules/.bin/node-sass-chokidar src/sass/bootstrap/bootstap.scss -o build/css/ --recursive",
+    "build": "npm run build-bs && npm run build-styles && npm run copy-assets && npm run build-templates",
     "test": "echo \"Error: no test specified\" && exit 1",
     "copy-assets": "cp -r js build/ && cp -r images build/ && cp -r fonts build/",
     "build-templates": "node bin/build.js"

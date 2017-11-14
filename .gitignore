@@ -1,7 +1,5 @@
 build/*
 !build/README.md
-!build/css/README.md
-!build/css/bootstrap.css
 
 templates/*.html
 !templates/header.html
