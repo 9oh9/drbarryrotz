@@ -14,5 +14,6 @@ deploy:
   bucket: drrotz
   local-dir: build
   acl: public_read
+  skip_cleanup: true
   on:
     repo: 9oh9/drbarryrotz
