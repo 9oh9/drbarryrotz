@@ -472,6 +472,7 @@
   }
 
   @media (max-width: $screen-xs-max) {
+    min-height: auto;
     .swiper-slide.bg-gray-dark {
       background-color: rgba($gray-dark, .2);
       background-blend-mode: multiply;
@@ -509,6 +510,10 @@
       padding-left: 0;
       padding-right: 0;
     }
+  }
+
+  @media (min-width: $screen-md-min) {
+    min-height: calc(100vh - 755px);
   }
 }
 

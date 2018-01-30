@@ -1,5 +1,6 @@
 build/*
 !build/README.md
+!build/new-patient-forms.pdf
 
 templates/*.html
 !templates/header.html
