@@ -29,3 +29,5 @@ node_modules/
 .npm
 
 .DS_Store
+
+images/.DS_Store
