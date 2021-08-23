@@ -1,7 +1,7 @@
 {
   "name": "drbarryrotz",
   "version": "0.0.1",
-  "description": "site for dr barry rotz & associates",
+  "description": "site for drrotzandassociates.com",
   "main": "index.js",
   "scripts": {
     "build-styles": "./node_modules/.bin/node-sass-chokidar src/sass/style.scss -o build/css/ --recursive",
