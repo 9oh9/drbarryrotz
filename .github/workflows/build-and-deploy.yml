@@ -20,6 +20,7 @@ jobs:
           path: |
             build
   deploy:
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - name: Download build artifacts
