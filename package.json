@@ -8,7 +8,7 @@
     "build-bs": "./node_modules/.bin/node-sass-chokidar src/sass/bootstrap/bootstrap.scss -o build/css/ --recursive",
     "build": "npm run build-bs && npm run build-styles && npm run copy-assets && npm run build-templates",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "copy-assets": "cp -r js build/ && cp -r images build/ && cp -r fonts build/",
+    "copy-assets": "cp -r js build/ && cp -r images build/ && cp -r fonts build/ && cp -r documents build/",
     "build-templates": "node bin/build.js"
   },
   "author": "nineohnine",
